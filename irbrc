@@ -37,7 +37,7 @@ end
 
 def copy(str)
   IO.popen('pbcopy', 'w') { |f| f << str.to_s }
-end
+end unless defined? copy
 
 def copy_history
   history = Readline::HISTORY.entries
