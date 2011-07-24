@@ -11,6 +11,12 @@
 	diff = auto
 	status = auto
 	branch = auto
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+[color "diff"]
+  whitespace = red reverse
 [core]
 	excludesfile = <%= ENV['HOME'] %>/.gitignore
 	editor = mate -w
