@@ -3,6 +3,10 @@
 	email = <%= print("Your Email: "); STDOUT.flush; STDIN.gets.chomp %>
 [alias]
   co = checkout
+  st = status -sb
+  df = diff
+  ci = commit --verbose
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
 [color]
 	diff = auto
 	status = auto
