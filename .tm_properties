@@ -1,0 +1,5 @@
+[ "zsh/*" ]
+fileType = "source.shell"
+
+[ "gemrc" ]
+fileType = "source.yaml"
