@@ -14,7 +14,7 @@ if [[ $TERM_PROGRAM == "Apple_Terminal" ]] && [[ -z "$INSIDE_EMACS" ]] {
 if [[ -n $SSH_CONNECTION ]]; then
   export PS1='%m:%3~$(git_info_for_prompt)%# '
 else
-  export PS1='%3~$(git_info_for_prompt)%# '
+  export PS1='%{%F{green}%}%3~%{%f%}$(git_info_for_prompt)%# '
 fi
 
 export EDITOR='mate_wait'
