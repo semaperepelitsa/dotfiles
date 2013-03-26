@@ -38,9 +38,10 @@ class Object
   end
 end
 
-def copy(str)
+def pbcopy str = _
   IO.popen('pbcopy', 'w') { |f| f << str.to_s }
-end unless defined? copy
+  str
+end
 
 def copy_history
   history = Readline::HISTORY.entries
@@ -50,7 +51,7 @@ def copy_history
   copy content
 end
 
-def paste
+def pbpaste
   `pbpaste`
 end
 
